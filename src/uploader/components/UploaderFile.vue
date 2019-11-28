@@ -8,7 +8,7 @@
                     {{ upload.file.name }}
                 </div>
                 <div class="text-gray-600 text-sm leading-tight">
-                    2 MB
+                    {{ sizeDisplay }} MB
                 </div>
             </div>
 
@@ -26,6 +26,12 @@
             upload: {
                 required: true,
                 type: Object
+            }
+        },
+
+        computed: {
+            sizeDisplay () {
+                return (this.upload.file.size / 1000000).toFixed(2)
             }
         }
     }
