@@ -1,6 +1,15 @@
 <template>
   <div id="app" class="container">
-    <Uploader />
+    <Uploader
+      :options="{
+        baseURL: 'http://desancheztorres.com/projects/vue-uploader/api/public/api'
+      }"
+      :handlers="{
+        'video/mp4' : {
+          endpoint: 'uploads/video'
+        }
+      }"
+    />
   </div>
 </template>
 

@@ -26,6 +26,13 @@
             upload: {
                 required: true,
                 type: Object
+            },
+            baseURL: {
+                required: true,
+                type: String
+            },
+            endpoint: {
+                required: true,
             }
         },
 
@@ -33,6 +40,10 @@
             sizeDisplay () {
                 return (this.upload.file.size / 1000000).toFixed(2)
             }
+        },
+
+        mounted () {
+            console.log(this.endpoint)
         }
     }
 </script>
