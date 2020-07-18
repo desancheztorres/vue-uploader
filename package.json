@@ -10,7 +10,7 @@
   "dependencies": {
     "autoprefixer": "latest",
     "core-js": "^3.4.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "lodash.get": "^4.4.2",
     "tailwindcss": "^1.1.4",
     "vue": "^2.6.10"
